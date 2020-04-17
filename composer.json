@@ -1,0 +1,37 @@
+{
+    "name": "razvan/pdf-gen",
+    "description": "A laravel package for pdf generation.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Razvan Mihai",
+            "email": "razvan_mihai_2010@yahoo.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.0",
+        "erusev/parsedown": "^1.7",
+        "dompdf/dompdf": "^0.8.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1",
+        "setasign/fpdf": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "razvan\\PdfGen\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "razvan\\PdfGen\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\razvan\\PdfGen\\PdfServiceProvider"
+            ]
+        }
+    }
+}

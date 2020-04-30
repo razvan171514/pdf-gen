@@ -9,7 +9,7 @@ Require this package in your composer.json and update composer. This will downlo
 + dompdf/dompdf
 
 ```bash
-$ composer require razvan/pdf-gen
+$ composer require razvan171514/pdf-gen
 ```
 
 ## **Installation**
@@ -48,9 +48,9 @@ return [
         'orientation' => 'portrait',
     ],
     /** path to template directoy */
-    'templates_path' => __DIR__ . '/../tests/templates/',
+    'templates_path' => __DIR__ . '/../resources/views/',
     /** path to output directory */
-    'output_path' => __DIR__ . '/../tests/templates/pdfs/',
+    'output_path' => __DIR__ . '/../resources/views/pdfs/',
 ];
 ```
 
@@ -58,8 +58,8 @@ Here is allso configured the path to the templates directory and the path where 
 
 ```php
 ...
-'templates_path' => base_path('tests/templates'),
-'output_path' => base_path('tests/templates/pdfs'),
+'templates_path' => base_path('resources/views'),
+'output_path' => base_path('resources/views/pdfs'),
 ...
 ```
 
@@ -109,8 +109,10 @@ Pdf::generate(view('blade_view', compact('data')), [
 ]);
 ```
 
+> **Note:** The import statement can be changed with only ```use Pdf;``` if the alias is added to ```config/app.php``` file
+
 > **Note:** The second argument accepted by the generate method can be passed with only one of the two keys (the other one will defaulted with it's default value)
 
 ## **License**
 
-### [razvan/pdf-gen](https://github.com/razvan171514/pdf-gen) is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
+### [razvan171514/pdf-gen](https://github.com/razvan171514/pdf-gen) is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)

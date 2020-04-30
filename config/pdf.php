@@ -9,7 +9,7 @@ return [
         'orientation' => 'portrait',
     ],
     /** path to template directoy */
-    'templates_path' => __DIR__ . '/../tests/templates/',
+    'templates_path' => __DIR__ . '/../resources/views/',
     /** path to output directory */
-    'output_path' => __DIR__ . '/../tests/templates/pdfs/',
+    'output_path' => __DIR__ . '/../resources/views/pdfs/',
 ];

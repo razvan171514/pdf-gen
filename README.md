@@ -14,8 +14,6 @@ $ composer require razvan/pdf-gen
 
 ## **Installation**
 
-----
-
 ### Laravel 7.x
 
 In the ```config/app.php``` file an alias can be added for ease of use when importing the facade.
@@ -31,8 +29,6 @@ In the ```config/app.php``` file an alias can be added for ease of use when impo
 ```
 
 ## **Publishing configuration**
-
-----
 
 The defaults configuration settings are set in ```config/pdf.php``` . Copy this file to your own config directory to modify the values. You can publish the config using this command:
 
@@ -70,8 +66,6 @@ Here is allso configured the path to the templates directory and the path where 
 > **Note:** The output folder has to exist otherwose an exception will be thrown
 
 ## **Usage**
-
-----
 
 The havy lifting of the entire package is done by the ```razvan\PdfGen\Pdf::class``` witch is resolving the configuration in the ```config/pdf.php``` file and returns the desired pdf file.
 
@@ -118,7 +112,5 @@ Pdf::generate(view('blade_view', compact('data')), [
 > **Note:** The second argument accepted by the generate method can be passed with only one of the two keys (the other one will defaulted with it's default value)
 
 ## **License**
-
-----
 
 ### [razvan/pdf-gen](https://github.com/razvan171514/pdf-gen) is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)

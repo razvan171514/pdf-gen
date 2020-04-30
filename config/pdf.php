@@ -7,9 +7,9 @@ return [
         'page' => 'A4',
         /** landscape, portrait */
         'orientation' => 'portrait',
-        // 'css_path' => __DIR__ . '/../public/css',
     ],
     /** path to template directoy */
     'templates_path' => __DIR__ . '/../tests/templates/',
+    /** path to output directory */
     'output_path' => __DIR__ . '/../tests/templates/pdfs/',
 ];

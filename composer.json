@@ -11,7 +11,7 @@
     "require": {
         "mpdf/mpdf": "^8.0",
         "erusev/parsedown": "^1.7",
-        "dompdf/dompdf": "^0.8.5"
+        "dompdf/dompdf": "^2.0.1"
     },
     "require-dev": {
         "orchestra/testbench": "^5.1",
